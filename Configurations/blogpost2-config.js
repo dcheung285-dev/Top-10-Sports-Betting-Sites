@@ -1,23 +1,23 @@
 // ===================================================================
-// BLOG POST 2 CONFIGURATION - RTX GPU Comparison
+// BLOG POST 2 CONFIGURATION - Cash Out vs Bet Builders: Which Adds More Value?
 // ===================================================================
 // This file controls all content for the individual blog post page
 // Edit this file to customize the blog post content, meta data, and styling
 
 // ========== POST META DATA ==========
 const BLOGPOST_META = {
-    title: "RTX 4090 vs RTX 4080: Which GPU Powers the Best Gaming Laptops?",
-    excerpt: "Compare the RTX 4090 and RTX 4080 in gaming laptops. Discover performance differences, power consumption, thermal management, and which GPU delivers the best value for high-end gaming laptops.",
-    category: "GPU Guide",
+    title: "Cash Out vs Bet Builders: Which Adds More Value?",
+    excerpt: "We compare cashout implementations and same‑game builders across major crypto sportsbooks—when to use each and pitfalls to avoid.",
+    category: "Strategy",
     categoryColor: "success",
-    date: "December 8, 2024",
-    author: "DC's Top 10 GPU Experts",
-    readTime: 10,
-    keywords: "RTX 4090 vs 4080, gaming laptop GPU comparison, RTX performance, gaming laptop graphics, GPU benchmarks, laptop gaming performance",
+    date: "January 7, 2025",
+    author: "Crypto Sportsbook Scout Team",
+    readTime: 8,
+    keywords: "cash out, bet builder, same game multi, sportsbook strategy, crypto betting tools",
     
     // Featured Image
-    image: "./assets/images/laptop_test/gpu.jpg",
-    imageAlt: "RTX 4090 vs RTX 4080 gaming laptop GPU comparison and benchmarks",
+    image: "./assets/images/sports-betting/bet-builder.png",
+    imageAlt: "Cash out vs bet builder explainer",
     
     // Image positioning and scaling
     imageScale: 1.0,
@@ -27,14 +27,14 @@ const BLOGPOST_META = {
     },
     
     // Social sharing
-    socialImage: "./assets/images/laptop_test/rtx_4090_comparison.webp",
+    socialImage: "./assets/images/sports-betting/bet-builder.jpg",
     
     // Tags for the post
     tags: [
-        { text: "RTX 4090", type: "secondary" },
-        { text: "RTX 4080", type: "primary" },
-        { text: "GPU Comparison", type: "success" },
-        { text: "Performance", type: "accent" }
+        { text: "Cash Out", type: "secondary" },
+        { text: "Builders", type: "success" },
+        { text: "Strategy", type: "accent" },
+        { text: "Crypto Sportsbook", type: "primary" }
     ]
 };
 
@@ -42,254 +42,71 @@ const BLOGPOST_META = {
 const ARTICLE_CONTENT = {
     // Table of Contents
     tableOfContents: [
-        { id: "introduction", title: "RTX 4090 vs RTX 4080: The Ultimate Showdown", level: 1 },
-        { id: "specifications", title: "Technical Specifications Comparison", level: 1 },
-        { id: "gaming-performance", title: "Gaming Performance Benchmarks", level: 2 },
-        { id: "power-consumption", title: "Power Consumption and Battery Life", level: 2 },
-        { id: "thermal-management", title: "Thermal Performance in Laptops", level: 1 },
-        { id: "price-value", title: "Price-to-Performance Analysis", level: 2 },
-        { id: "real-world-testing", title: "Real-World Gaming Tests", level: 1 },
-        { id: "laptop-recommendations", title: "Best Laptops for Each GPU", level: 1 },
-        { id: "conclusion", title: "Which GPU Should You Choose?", level: 1 }
+        { id: "intro", title: "What Are These Features?", level: 1 },
+        { id: "cashout", title: "Cash Out: Pros, Cons, Edge Cases", level: 1 },
+        { id: "builders", title: "Bet Builders: Value Windows", level: 1 },
+        { id: "live", title: "Live Context: Pricing, Delays, Limits", level: 1 },
+        { id: "when", title: "When to Use Each", level: 1 },
+        { id: "summary", title: "Quick Summary", level: 1 }
     ],
     
     // Main article sections
     sections: [
         {
-            id: "introduction",
-            title: "RTX 4090 vs RTX 4080: The Ultimate Gaming GPU Battle",
+            id: "intro",
+            title: "What Are These Features?",
             content: `
-                <p>The RTX 4090 and RTX 4080 represent NVIDIA's flagship gaming GPUs, powering the most advanced gaming laptops available today. Both cards deliver exceptional 4K gaming performance, but understanding their differences is crucial for making the right choice.</p>
-                
-                <p>While both GPUs excel at high-resolution gaming, the RTX 4090 offers uncompromising performance for enthusiasts, while the RTX 4080 provides excellent value for high-end gaming without the premium price tag.</p>
-                
-                <div class="highlight-box" style="background: var(--accent-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0; border-left: 4px solid var(--accent-color);">
-                    <h4 style="color: var(--accent-color); margin-bottom: var(--spacing-sm);">🎯 Performance Overview</h4>
-                    <p style="margin: 0;"><strong>RTX 4090: Ultimate 4K gaming</strong> with 15-25% better performance than RTX 4080, but at significantly higher cost and power consumption.</p>
-                </div>
-                
-                <p>This comprehensive comparison will help you decide which GPU powers the perfect gaming laptop for your needs, budget, and performance expectations.</p>
+                <p><strong>Cash Out</strong> lets you settle a position before full-time, while <strong>Bet Builders</strong> combine selections (often within one match). Both can be valuable if used deliberately.</p>
             `
         },
         {
-            id: "technical-specs",
-            title: "Technical Specifications Breakdown",
+            id: "cashout",
+            title: "Cash Out: Pros, Cons, Edge Cases",
             content: `
-                <p>Understanding the technical differences between RTX 4090 and RTX 4080 reveals why performance varies significantly between these flagship GPUs in gaming laptops.</p>
-                
-                <h4>Core Specifications Comparison:</h4>
-                <ol>
-                    <li><strong>CUDA Cores:</strong> RTX 4090 (16,384) vs RTX 4080 (9,728) - 68% more cores</li>
-                    <li><strong>Memory:</strong> RTX 4090 (24GB GDDR6X) vs RTX 4080 (16GB GDDR6X)</li>
-                    <li><strong>Memory Bus:</strong> RTX 4090 (384-bit) vs RTX 4080 (256-bit) - 50% wider</li>
-                    <li><strong>Base Clock:</strong> RTX 4090 (2230 MHz) vs RTX 4080 (2205 MHz)</li>
-                    <li><strong>Memory Bandwidth:</strong> RTX 4090 (1008 GB/s) vs RTX 4080 (717 GB/s)</li>
-                </ol>
-                
-                <div class="info-box" style="background: var(--primary-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0;">
-                    <h4 style="color: var(--primary-color); margin-bottom: var(--spacing-sm);">⚡ Performance Impact</h4>
-                    <p style="margin: 0;">The RTX 4090's superior specifications translate to 15-25% better gaming performance, especially at 4K resolution and with ray tracing enabled.</p>
-                </div>
-            `
-        },
-        {
-            id: "gaming-benchmarks",
-            title: "Gaming Performance Benchmarks",
-            content: `
-                <p>Real-world gaming benchmarks reveal the performance differences between RTX 4090 and RTX 4080 across popular titles at various resolutions and settings.</p>
-                
-                <h4>4K Gaming Performance (Ultra Settings):</h4>
                 <ul>
-                    <li><strong>Cyberpunk 2077:</strong> RTX 4090 (65 FPS) vs RTX 4080 (52 FPS) - 25% faster</li>
-                    <li><strong>Call of Duty MW3:</strong> RTX 4090 (95 FPS) vs RTX 4080 (78 FPS) - 22% faster</li>
-                    <li><strong>Assassin's Creed Mirage:</strong> RTX 4090 (72 FPS) vs RTX 4080 (58 FPS) - 24% faster</li>
-                    <li><strong>Forza Horizon 5:</strong> RTX 4090 (88 FPS) vs RTX 4080 (71 FPS) - 24% faster</li>
-                    <li><strong>Spider-Man Remastered:</strong> RTX 4090 (78 FPS) vs RTX 4080 (63 FPS) - 24% faster</li>
-                </ul>
-                
-                <div class="performance-box" style="background: var(--success-color-light); padding: var(--spacing-md); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0; font-family: 'Courier New', monospace; font-size: 0.9rem;">
-                    <h5>Average 4K Performance:</h5>
-                    <p><strong>RTX 4090:</strong> 75 FPS average across AAA titles</p>
-                    <p><strong>RTX 4080:</strong> 60 FPS average across AAA titles</p>
-                </div>
-            `
-        },
-        {
-            id: "ray-tracing-dlss",
-            title: "Ray Tracing and DLSS Performance",
-            content: `
-                <p>Both GPUs excel at ray tracing and DLSS, but the RTX 4090's additional RT cores and memory provide superior performance in demanding scenarios.</p>
-                
-                <h4>Ray Tracing Performance (4K + RT):</h4>
-                <ul>
-                    <li><strong>Metro Exodus Enhanced:</strong> RTX 4090 (58 FPS) vs RTX 4080 (45 FPS)</li>
-                    <li><strong>Control Ultimate:</strong> RTX 4090 (52 FPS) vs RTX 4080 (41 FPS)</li>
-                    <li><strong>Minecraft RTX:</strong> RTX 4090 (78 FPS) vs RTX 4080 (62 FPS)</li>
-                    <li><strong>Watch Dogs Legion:</strong> RTX 4090 (48 FPS) vs RTX 4080 (38 FPS)</li>
-                </ul>
-                
-                <h4>DLSS 3.0 Frame Generation:</h4>
-                <ul>
-                    <li>Both support DLSS 3.0 with Frame Generation</li>
-                    <li>RTX 4090 maintains higher base frames for better DLSS scaling</li>
-                    <li>Superior memory bandwidth benefits high-resolution DLSS</li>
-                    <li>Better performance headroom for future DLSS improvements</li>
-                </ul>
-                
-                <div class="tech-tip" style="background: var(--accent-color-light); padding: var(--spacing-md); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0;">
-                    <h4 style="color: var(--accent-color); margin-bottom: var(--spacing-sm);">🚀 DLSS Advantage</h4>
-                    <p style="margin: 0;">DLSS 3.0 can double or triple frame rates, making both GPUs excellent for 4K ray traced gaming with the right settings.</p>
-                </div>
-            `
-        },
-        {
-            id: "thermal-performance",
-            title: "Thermal Performance and Power Consumption",
-            content: `
-                <p>Understanding thermal characteristics and power consumption is crucial when choosing between these high-performance GPUs in gaming laptops.</p>
-                
-                <h4>Power and Thermal Specifications:</h4>
-                <ul>
-                    <li><strong>RTX 4090:</strong> 150-175W TGP (laptop variant)</li>
-                    <li><strong>RTX 4080:</strong> 120-150W TGP (laptop variant)</li>
-                    <li><strong>Operating Temperature:</strong> Both target 83°C maximum</li>
-                    <li><strong>Cooling Requirements:</strong> RTX 4090 needs more robust cooling</li>
-                    <li><strong>Battery Impact:</strong> RTX 4090 reduces battery life by 15-20%</li>
-                </ul>
-                
-                <h4>Thermal Management Considerations:</h4>
-                <ol>
-                    <li><strong>Laptop Design:</strong> RTX 4090 requires thicker chassis and better cooling</li>
-                    <li><strong>Fan Noise:</strong> RTX 4090 laptops typically run louder under load</li>
-                    <li><strong>Throttling Risk:</strong> Inadequate cooling can limit RTX 4090 performance</li>
-                </ol>
-            `
-        },
-        {
-            id: "price-value",
-            title: "Price and Value Analysis",
-            content: `
-                <p>The price difference between RTX 4090 and RTX 4080 gaming laptops is substantial, making value analysis crucial for your decision.</p>
-                
-                <div class="price-comparison" style="background: var(--background-secondary); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0;">
-                    <h4 style="margin-bottom: var(--spacing-md);">💰 Pricing Comparison</h4>
-                    
-                    <div class="price-tier" style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-lg); border-left: 3px solid var(--accent-color);">
-                        <h5 style="color: var(--accent-color);">RTX 4080 Laptops</h5>
-                        <p>£2,500 - £4,000 depending on brand and features</p>
-                    </div>
-                    
-                    <div class="price-tier" style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-lg); border-left: 3px solid var(--primary-color);">
-                        <h5 style="color: var(--primary-color);">RTX 4090 Laptops</h5>
-                        <p>£4,000 - £6,500+ for premium models with advanced cooling</p>
-                    </div>
-                    
-                    <div class="value-analysis" style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-lg); border-left: 3px solid var(--success-color);">
-                        <h5 style="color: var(--success-color);">Price Premium</h5>
-                        <p>RTX 4090 laptops cost 40-60% more for 15-25% better performance</p>
-                    </div>
-                </div>
-                
-                <div class="value-box" style="background: var(--warning-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0;">
-                    <h4 style="color: var(--warning-color); margin-bottom: var(--spacing-sm);">🏆 Value Verdict</h4>
-                    <p style="margin: 0;">RTX 4080 offers better price-to-performance ratio, while RTX 4090 provides uncompromising performance for enthusiasts.</p>
-                </div>
-            `
-        },
-        {
-            id: "laptop-recommendations",
-            title: "Best RTX 4090 vs RTX 4080 Gaming Laptops",
-            content: `
-                <p>Here are our top recommendations for RTX 4090 and RTX 4080 gaming laptops across different categories and budgets:</p>
-                
-                <div class="recommendations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); margin: var(--spacing-lg) 0;">
-                    <div class="laptop-card" style="background: var(--success-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
-                        <h4 style="color: var(--success-color); margin-bottom: var(--spacing-sm);">🏆 Best RTX 4090</h4>
-                        <p style="margin: 0;"><strong>ASUS ROG Zephyrus G18:</strong> Excellent cooling, 240Hz display, premium build quality.</p>
-                    </div>
-                    
-                    <div class="laptop-card" style="background: var(--primary-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
-                        <h4 style="color: var(--primary-color); margin-bottom: var(--spacing-sm);">💰 Best RTX 4080 Value</h4>
-                        <p style="margin: 0;"><strong>MSI Vector GP78:</strong> Great price-to-performance, solid cooling, RGB lighting.</p>
-                    </div>
-                    
-                    <div class="laptop-card" style="background: var(--accent-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
-                        <h4 style="color: var(--accent-color); margin-bottom: var(--spacing-sm);">⚡ Best Premium</h4>
-                        <p style="margin: 0;"><strong>Razer Blade 16:</strong> Premium design, excellent display, both RTX options available.</p>
-                    </div>
-                    
-                    <div class="laptop-card" style="background: var(--warning-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md);">
-                        <h4 style="color: var(--warning-color); margin-bottom: var(--spacing-sm);">🎮 Best for Esports</h4>
-                        <p style="margin: 0;"><strong>Alienware x17 R2:</strong> High refresh displays, excellent keyboard, RTX 4080 sufficient.</p>
-                    </div>
-                </div>
-                
-                <h4>Key Considerations by Use Case:</h4>
-                <ul>
-                    <li><strong>4K Gaming:</strong> RTX 4090 provides better headroom for ultra settings</li>
-                    <li><strong>Content Creation:</strong> RTX 4090's extra VRAM benefits video editing</li>
-                    <li><strong>Competitive Gaming:</strong> RTX 4080 offers excellent 1440p performance</li>
-                    <li><strong>Budget Conscious:</strong> RTX 4080 delivers 90% of the performance at lower cost</li>
+                    <li><strong>Pros:</strong> risk management, reduce variance, exit stale positions.</li>
+                    <li><strong>Cons:</strong> implied vig; poor pricing near rapid changes.</li>
+                    <li><strong>Edge cases:</strong> suspension windows, partial cash outs, market availability.</li>
                 </ul>
             `
         },
         {
-            id: "future-proofing",
-            title: "Future-Proofing and Longevity",
+            id: "builders",
+            title: "Bet Builders: Value Windows",
             content: `
-                <p>Understanding how long these GPUs will remain relevant helps justify the investment in high-end gaming laptops.</p>
-                
-                <h4>RTX 4090 Longevity Advantages:</h4>
                 <ul>
-                    <li>✅ 24GB VRAM future-proofs against memory-intensive games</li>
-                    <li>✅ Superior raw performance extends usable lifespan</li>
-                    <li>✅ Better 4K gaming headroom as games become more demanding</li>
-                    <li>✅ Enhanced ray tracing for next-generation titles</li>
+                    <li>Correlation can be priced tightly; value appears in niche combos.</li>
+                    <li>Use player minutes/injury news; confirm settlement rules.</li>
+                    <li>Small stakes; spread exposure; beware boost traps.</li>
                 </ul>
-                
-                <h4>RTX 4080 Considerations:</h4>
-                <ul>
-                    <li>⚠️ 16GB VRAM may limit future 4K gaming</li>
-                    <li>✅ Excellent 1440p performance for 3-4 years</li>
-                    <li>✅ DLSS 3.0 extends performance longevity</li>
-                    <li>✅ Better value if upgrading every 2-3 years</li>
-                </ul>
-                
-                <div class="longevity-note" style="background: var(--primary-color-light); padding: var(--spacing-lg); border-radius: var(--border-radius-md); margin: var(--spacing-lg) 0; border-left: 4px solid var(--primary-color);">
-                    <h4 style="color: var(--primary-color); margin-bottom: var(--spacing-sm);">🔮 Future Gaming Trends</h4>
-                    <p style="margin: 0;">Games are becoming more VRAM-intensive and computationally demanding. The RTX 4090's advantages will become more pronounced over time.</p>
-                </div>
             `
         },
         {
-            id: "conclusion",
-            title: "Which GPU Should You Choose?",
+            id: "live",
+            title: "Live Context: Pricing, Delays, Limits",
             content: `
-                <p>The choice between RTX 4090 and RTX 4080 depends on your gaming priorities, budget, and performance expectations.</p>
-                
-                <h4>Choose RTX 4090 If:</h4>
                 <ul>
-                    <li><strong>Ultimate 4K Gaming:</strong> You want the absolute best 4K performance</li>
-                    <li><strong>Content Creation:</strong> You need maximum VRAM for video editing/streaming</li>
-                    <li><strong>Future-Proofing:</strong> You plan to keep the laptop for 4+ years</li>
-                    <li><strong>Budget Flexibility:</strong> Premium performance justifies the higher cost</li>
-                    <li><strong>Ray Tracing Enthusiast:</strong> You prioritize maximum RT performance</li>
+                    <li>Expect suspensions near key events; confirm cash out during VAR/timeouts.</li>
+                    <li>Builders may be disabled/live only for select markets.</li>
+                    <li>Limit behavior differs by book; test small first.</li>
                 </ul>
-                
-                <div class="recommendation-box" style="background: linear-gradient(135deg, var(--primary-color-light) 0%, var(--accent-color-light) 100%); padding: var(--spacing-xl); border-radius: var(--border-radius-lg); margin: var(--spacing-xl) 0; text-align: center;">
-                    <h4 style="margin-bottom: var(--spacing-md); color: var(--primary-color);">🎯 Our Recommendation</h4>
-                    <p style="margin: 0; font-style: italic;">For most gamers, the RTX 4080 offers the best balance of performance and value. Choose RTX 4090 only if you need absolute maximum performance and have the budget for it.</p>
-                </div>
-                
-                <p>Both GPUs deliver exceptional gaming experiences. The RTX 4080 provides excellent 4K gaming at a more reasonable price, while the RTX 4090 offers uncompromising performance for enthusiasts.</p>
-                
-                <div class="final-cta">
-                    <h4>Find Your Perfect RTX Gaming Laptop</h4>
-                    <p>Explore our curated selection of RTX 4090 and RTX 4080 gaming laptops.</p>
-                    <a href="./index.html" class="btn btn-primary">
-                        View Top Gaming Laptops
-                    </a>
-                </div>
+            `
+        },
+        {
+            id: "when",
+            title: "When to Use Each",
+            content: `
+                <ul>
+                    <li><strong>Cash Out:</strong> volatile live spots, injury events, hedging multi‑legs.</li>
+                    <li><strong>Builders:</strong> niche correlations you’ve modeled; small edge stacking.</li>
+                </ul>
+            `
+        },
+        {
+            id: "summary",
+            title: "Quick Summary",
+            content: `
+                <p><strong>Cash Out:</strong> manage variance; mind the vig. <strong>Builders:</strong> target niche correlations; watch limits. Test with small stakes and track outcomes.</p>
             `
         }
     ]
@@ -297,39 +114,39 @@ const ARTICLE_CONTENT = {
 
 // ========== CTA CONTENT ==========
 const CTA_CONTENT = {
-    title: "🎮 Find Your Perfect RTX Gaming Laptop",
-    description: "All laptops in our Top 10 rankings feature the latest RTX GPUs with detailed performance analysis. Find the perfect gaming machine for your needs.",
-    buttonText: "View RTX Gaming Laptops",
-    buttonLink: "./index.html"
+    title: "📊 Find Books With Good Cash Out/Builders",
+    description: "Compare feature depth and live performance across our Top 10.",
+    buttonText: "Compare Now",
+    buttonLink: "./index.html#comparison"
 };
 
 // ========== RELATED POSTS ==========
 const RELATED_POSTS = [
     {
-        title: "Ultimate Gaming Laptop Buying Guide 2025: Choose the Perfect Gaming Machine",
-        excerpt: "Master the art of choosing the perfect gaming laptop with our comprehensive guide.",
-        image: "./assets/images/laptop_test/blog1.webp",
+        title: "Crypto Sportsbook Guide: How to Choose the Right Book",
+        excerpt: "Crypto-first sportsbook with 20+ coins, live streaming and SGM.",
+        image: "./assets/images/sports-betting/guide.jpg",
         imageScale: 1.0,
         imagePositioning: {
-            objectPosition: 'center',
+            objectPosition: 'top center',
             objectFit: 'cover'
         },
         link: "./blogpost1.html",
-        category: "Buying Guide",
-        date: "December 10, 2024"
+        category: "Sportsbook Guide",
+        date: "January 5, 2025"
     },
     {
-        title: "Gaming Laptop Cooling Systems: Thermal Management Guide 2025",
-        excerpt: "Master gaming laptop cooling with our comprehensive thermal management guide.",
-        image: "./assets/images/laptop_test/cooling.jpg",
+        title: "Crypto Bonus Terms Explained: Rollover, Expiry, Limits",
+        excerpt: "BTC, ETH, TRC20/Polygon stables—optimize costs and speed.",
+        image: "./assets/images/sports-betting/bonus-terms.jpg",
         imageScale: 1.0,
         imagePositioning: {
             objectPosition: 'center',
             objectFit: 'fill'
         },
         link: "./blogpost3.html",
-        category: "Cooling Guide",
-        date: "December 5, 2024"
+        category: "Bonus Guide",
+        date: "January 4, 2025"
     }
     /* you can add more related posts here */
 ];
@@ -395,7 +212,7 @@ class BlogPost2Manager {
         if (postDate) postDate.textContent = BLOGPOST_META.date;
         
         const readTime = document.getElementById('read-time');
-        if (readTime) readTime.textContent = `${BLOGPOST_META.readTime} min read`;
+        if (readTime) postDate && (readTime.textContent = `${BLOGPOST_META.readTime} min read`);
         
         const postAuthor = document.getElementById('post-author');
         if (postAuthor) postAuthor.textContent = BLOGPOST_META.author;

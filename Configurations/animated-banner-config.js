@@ -479,10 +479,12 @@ const ANIMATED_BANNER_CONFIG = {
         'disclaimer.html': { enabled: false, useDefault: true }  // ← Disclaimer page settings
     },
     
+
+    // Default banner settings
     // Banner positioning
     positioning: {
         showOnTop: true,                                          // ← Show at top of page
-        topOffset: '100px',                                        // ← Distance from nav bar (nav height + 10px gap)
+        topOffset: '5rem',                                        // ← Distance from nav bar (nav height + 10px gap)
         zIndex: 15,                                              // ← Layer order (nav is 20)
         entranceAnimation: true,                                 // ← Enable slide-down entrance animation
         animationDuration: '0.8s'                               // ← Duration of entrance animation
@@ -491,10 +493,10 @@ const ANIMATED_BANNER_CONFIG = {
     // Background styling
     background: {
         type: 'gradient',                                         // ← 'gradient', 'solid', or 'image'
-        gradientStart: '#ffffff',                   // ← Gradient start color (white)
-        gradientEnd: '#c0c0c0',                    // ← Gradient end color (silver)
+        gradientStart: '#4dafff',                 // ← Gradient start color (white)
+        gradientEnd: '#000010',                    // ← Gradient end color (silver)
         gradientDirection: '90deg',                               // ← Gradient direction
-        solidColor: '#f5f5f5',                                   // ← Solid color fallback (light gray)
+        solidColor: '#0a3d91',                                   // ← Solid color fallback (light gray)
         opacity: 0.95                                            // ← Background opacity
     },
     
@@ -502,17 +504,17 @@ const ANIMATED_BANNER_CONFIG = {
     logo: {
         type: 'image',                                        // ← 'text', 'image', 'combined'
         text: {
-            content: '🍎',                                        // ← Logo emoji/icon
-            brandText: 'MacBook Pro',                               // ← Brand name
+            content: '',                                        // ← Logo emoji/icon
+            brandText: '',                               // ← Brand name
             fontSize: '30px',                                    // ← Logo text size
-            textColor: '#000000',                                // ← Logo text color (black)
+            textColor: '#ffffff',                                // ← Logo text color (black)
             spacing: '8px',                                       // ← Space between icon and text
             left: '-10px',                                        // ← Logo image left position
             top: '0px',                                           // ← Logo image top position
             scale: '1.0'
         },
         image: {
-            src: 'assets/images/laptop_test/apple_logo_black_text.png',               // ← Logo image path
+            src: 'assets/images/casino_test/rocketpot_text_logo_black.webp',               // ← Logo image path
             width: 'auto',                                       // ← Logo image width
             height: 'auto',                                       // ← Logo image height
             scale: '1.0',                                         // ← Logo image scale
@@ -521,11 +523,11 @@ const ANIMATED_BANNER_CONFIG = {
         },
         combined: {
             useImage: true,                                      // ← Use image + text
-            imageSrc: 'assets/images/laptop_test/apple_logo_black_text.png',     // ← Combined logo image
+            imageSrc: 'assets/images/casino_test/rocketpot_text_logo_black.webp',     // ← Combined logo image
             imageWidth: '56px',                                  // ← Combined image width
             imageHeight: '56px',                                 // ← Combined image height
-            textContent: 'MacBook Pro',                            // ← Combined text
-            textColor: '#000000',                               // ← Combined text color (black)
+            textContent: 'Rocketpot Casino',                            // ← Combined text
+            textColor: '#ffffff',                               // ← Combined text color (black)
             fontSize: '30px',                                   // ← Combined text size
             spacing: '10px',                                     // ← Space between image and text
             scale: '1.0',                                        // ← Logo image scale
@@ -539,14 +541,14 @@ const ANIMATED_BANNER_CONFIG = {
     animatedText: {
         // Word sets - each array is one sequence (can have 1, 2, or 3+ words)
         wordSets: [
-            ['M4 Max Chip', 'Exceptional Performance'],                          // ← 2 words
-            ['Liquid Retina XDR', 'Stunning Display'],                   // ← 2 words
-            ['22-Hour Battery Life'],                                    // ← 1 word
-            ['Professional Grade'], 
-            ['Creative Powerhouse'],                    // ← 2 words
-            ['macOS Sequoia', 'Advanced Features'],                  // ← 2 words
-            ['Industry Leading', 'Advanced Favourite'],              // ← 2 words
-            ['Best Gaming Laptop 2025'],                  // ← 1 word
+            ['Rocketpot Casino', 'Deposit Bonuses'],                       
+            ['Provably Fair', '24/7 Support'],                
+            ['Instant Crypto Withdrawals'],                               
+            ['Crypto Friendly'], 
+            ['Multi-coin Support'],                   
+            ['3,000+ games & live dealer'],                 
+            ['Daily Tournaments & Cash Drops'],             
+            ['Up to 20% cashback'],                  
 
         ],
         
@@ -562,7 +564,7 @@ const ANIMATED_BANNER_CONFIG = {
         styling: {
             fontSize: '24px',                                    // ← Text size
             fontWeight: '600',                                   // ← Text weight
-            color: '#000000',                                    // ← Text color (black)
+            color: '#ffffff',                                    // ← Text color (black)
             spacing: '15px',                                     // ← Space between words
             minWidth: '400px',                                   // ← Minimum text area width
             forceCenterText: true                                // ← Force text to center between logo and CTA
@@ -571,17 +573,17 @@ const ANIMATED_BANNER_CONFIG = {
     
     // CTA Button (right side)
     ctaButton: {
-        text: 'Buy Now',                                        // ← Button text
-        url: 'https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch-m4-max',                             // ← Button link
+        text: 'Play Now',                                        // ← Button text
+        url: 'https://rocketpot.io/',                               // ← Button link
         styling: {
-            backgroundColor: '#d1d5db',                          // ← Button background (light gray/silver)
-            hoverBackgroundColor: '#9ca3af',                    // ← Button hover background (darker gray)
-            textColor: '#000000',                               // ← Button text color (black)
+            backgroundColor: '#0a3d91',                         // ← Button background (light gray/silver)
+            hoverBackgroundColor: '#4dafff',                   // ← Button hover background (darker gray)
+            textColor: '#ffffff',                               // ← Button text color (black)
             fontSize: '18px',                                   // ← Button text size
             fontWeight: 'bold',                                 // ← Button text weight
             padding: '12px 24px',                               // ← Button padding
             borderRadius: '6px',                                // ← Button border radius
-            border: '1px solid #9ca3af'                                      // ← Button border
+            border: 'none'                                      // ← Button border
         }
     },
     
@@ -607,9 +609,9 @@ const ANIMATED_BANNER_CONFIG = {
         paddingRight: '0',                                    // ← Default logo right padding
         paddingLeft: '0',                                     // ← Default logo left padding
         marginRight: '0',                                   // ← Default logo right margin
-        marginLeft: '2.5rem',                                     // ← Default logo left margin
+        marginLeft: '0',                                     // ← Default logo left margin
         marginTop: '0',
-        marginBottom: '0.5rem',
+        marginBottom: '0',
         paddingTop: '0',
         paddingBottom: '0',
         iconTextGap: '-10px'                                    // ← Gap between icon/image and text within logo
@@ -617,7 +619,7 @@ const ANIMATED_BANNER_CONFIG = {
     
     // Default animated text positioning (desktop)
     textPositioning: {
-        paddingRight: '5rem',                                    // ← Default text right padding
+        paddingRight: '0',                                    // ← Default text right padding
         paddingLeft: '0',                                     // ← Default text left padding
         marginRight: '0',                                   // ← Default text right margin
         marginLeft: '0'                                     // ← Default text left margin
@@ -626,7 +628,7 @@ const ANIMATED_BANNER_CONFIG = {
     // Responsive settings with comprehensive scaling system
     responsive: {
         desktop: {
-            logoScale: 0.05,                                         // ← Desktop logo scaling (reduce from natural size)
+            logoScale: 0.8,                                         // ← Desktop logo scaling (reduce from natural size)
             textScale: 1.0,                                         // ← Desktop text scaling
             buttonScale: 1.0                                        // ← Desktop button scaling
         },
@@ -640,7 +642,7 @@ const ANIMATED_BANNER_CONFIG = {
             ctaPadding: '8px 8px',                             // ← Tablet button padding
             containerWidth: '95%',                              // ← Container width
             borderRadius: '10px',                               // ← Rounded corners
-            logoScale: 0.05,                                     // ← Logo specific scaling
+            logoScale: 0.5,                                     // ← Logo specific scaling
             textScale: 1.1,                                     // ← Text specific scaling
             buttonScale: 1.0,                                   // ← Button specific scaling
             topOffset: '5.5rem',                                // ← Tablet-specific top offset
@@ -652,7 +654,7 @@ const ANIMATED_BANNER_CONFIG = {
             },
             logoPositioning: {                                  // ← Logo positioning
                 paddingRight: '0',                              
-                paddingLeft: '2.5rem',
+                paddingLeft: '1.5rem',
                 paddingTop: '0',                                // ← Logo top padding for tablet
                 paddingBottom: '0',                             // ← Logo bottom padding for tablet
                 marginRight: '0',                             
@@ -679,12 +681,12 @@ const ANIMATED_BANNER_CONFIG = {
             containerWidth: '96%',                              // ← Container width
             borderRadius: '8px',                                // ← Rounded corners
             logoScale: 2.0,                                    // ← Logo specific scaling
-            textScale: 1.2,                                     // ← Text specific scaling
-            buttonScale: 1.2,                                   // ← Button specific scaling
+            textScale: 1.0,                                     // ← Text specific scaling
+            buttonScale: 1.0,                                   // ← Button specific scaling
             topOffset: '4rem',                                  // ← Mobile-specific top offset (nav + banner)
             ctaPositioning: {                                   // ← CTA button positioning
-                paddingRight: '0.5rem',                           // ← Right padding for mobile
-                paddingLeft: '0',                          
+                paddingRight: '0',                           // ← Right padding for mobile
+                paddingLeft: '1rem',                          
                 marginRight: '0',                             
                 marginLeft: '0',
                 marginTop: '0',
@@ -696,7 +698,7 @@ const ANIMATED_BANNER_CONFIG = {
                 paddingTop: '0',                                // ← Logo top padding for mobile
                 paddingBottom: '0',                             // ← Logo bottom padding for mobile
                 marginRight: '0',                             
-                marginLeft: '2.5rem',                               // ← Logo left margin for mobile
+                marginLeft: '1.5rem',                               // ← Logo left margin for mobile
                 marginTop: '0',                                 // ← Logo top margin for mobile
                 marginBottom: '0.25rem',                           // ← Logo bottom margin for mobile
                 iconTextGap: '0'                              // ← Icon-text gap for mobile
@@ -723,7 +725,7 @@ const ANIMATED_BANNER_CONFIG = {
             buttonScale: 1.0,                                   // ← Button specific scaling
             topOffset: '3.5rem',                                // ← Extra small-specific top offset
             ctaPositioning: {                                   // ← CTA button positioning
-                paddingRight: '2.0rem',                           // ← Right padding for extra small
+                paddingRight: '4.0rem',                           // ← Right padding for extra small
                 paddingLeft: '0',                             
                 marginRight: '0',                            
                 marginLeft: '0',
@@ -736,7 +738,7 @@ const ANIMATED_BANNER_CONFIG = {
                 paddingTop: '0',                                // ← Logo top padding for extra small
                 paddingBottom: '0',                             // ← Logo bottom padding for extra small
                 marginRight: '0',                             
-                marginLeft: '2.75rem',                               // ← Logo left margin for extra small
+                marginLeft: '2.5rem',                               // ← Logo left margin for extra small
                 marginTop: '0',                                // ← Logo top margin for extra small
                 marginBottom: '0.5rem',                              // ← Logo bottom margin for extra small
                 iconTextGap: '0'                              // ← Icon-text gap for extra small

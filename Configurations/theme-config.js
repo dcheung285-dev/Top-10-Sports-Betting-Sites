@@ -34,7 +34,7 @@ DARK THEMES:
 // GLOBAL WEBSITE THEME
 // ===========================================
 // This theme applies to ALL pages unless overridden below
-const GLOBAL_THEME = 'purple'; // ← CHANGE THIS TO SET YOUR ENTIRE WEBSITE THEME
+const GLOBAL_THEME = 'green'; // ← CHANGE THIS TO SET YOUR ENTIRE WEBSITE THEME
 
 // ===========================================
 // INDIVIDUAL PAGE THEMES (OPTIONAL)

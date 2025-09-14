@@ -23,85 +23,93 @@ const AUTO_SLIDER_CONFIG = {
         animationSpeed: 35, // Override global speed if needed
         images: [
             {
-                src: 'assets/images/laptop_test/apple_logo_black_text.png',
-                alt: 'Apple',
+                src: './assets/images/casino_test/rocketpot_text_logo_black.webp',
+                alt: 'Rocketpot',
                 width: 'auto', // 'auto' or specific width like '120px'
                 height: '60px', // Height of individual images
                 scale: 1.2, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
-                gap: 70     // Manual gap after this image (in pixels)
+                gap: 25     // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/ASUS_logo_white.png',
-                alt: 'Asus',
+                src: './assets/images/casino_test/stake_text_logo_black.svg',
+                alt: 'Stake',
                 width: 'auto', // 'auto' or specific width like '120px'
                 height: '60px', // Height of individual images
-                scale: 1.3, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
-                gap: 50 // Manual gap after this image (in pixels)
+                scale: 0.75, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
+                gap: 90 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/Dell_logo.png',
-                alt: 'Dell',
+                src: './assets/images/sports-betting/cloudbet_logo.png',
+                alt: 'Cloudbet',
+                width: 'auto',
+                height: '60px',
+                scale: 2.7,
+                gap: 85 // Manual gap after this image (in pixels)
+            },
+            {
+                src: './assets/images/sports-betting/sportsbet.io_logo.png',
+                alt: 'Sportsbet.io',
                 width: 'auto',
                 height: '60px',
                 scale: 1.0,
-                gap: 95 // Manual gap after this image (in pixels)
+                gap: 85   // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/microsoft_logo_grey.png',
-                alt: 'Microsoft',
+                src: './assets/images/casino_test/luckyblock_text_logo_black.webp',
+                alt: 'LuckyBlock',
                 width: 'auto',
                 height: '60px',
                 scale: 2.0,
-                gap: 145   // Larger gap for scaled image
+                gap: 90    // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/samsung_logo.png',
-                alt: 'Samsung',
+                src: './assets/images/casino_test/shuffle_text_logo_black.webp',
+                alt: 'Shuffle',
                 width: 'auto',
                 height: '60px',
-                scale: 3.0,
-                gap: 115    // Larger gap for scaled image
+                scale: 1.2,
+                gap: -60    // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/hp_logo.png',
-                alt: 'HP',
+                src: './assets/images/sports-betting/thunderpick_logo.png',
+                alt: 'Thunderpick',
                 width: 'auto',
                 height: '60px',
-                scale: 1.5,
-                gap: 100    // Larger gap for scaled image
+                scale: 0.5,
+                gap: -30    // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/Lenovo_logo.png',
-                alt: 'Lenovo',
-                width: 'auto',
-                height: '60px',
-                scale: 2.0,
-                gap: 110    // Larger gap for scaled image
-            },
-            {
-                src: 'assets/images/laptop_test/alienware_logo.png',
-                alt: 'Alienware',
-                width: 'auto',
-                height: '60px',
-                scale: 1.5,
-                gap: 60 // Much larger gap for heavily scaled image
-            },
-            {
-                src: 'assets/images/laptop_test/acer_logo.png',
-                alt: 'Acer',
-                width: 'auto',
-                height: '60px',
-                scale: 1.0,
-                gap: 60 // Medium gap for moderately scaled image
-            },
-            {
-                src: 'assets/images/laptop_test/lg_logo.png',
-                alt: 'LG',
+                src: './assets/images/casino_test/bc.game_text_logo_black.png',
+                alt: 'BC.Game',
                 width: 'auto',
                 height: '60px',
                 scale: 1.4,
-                gap: 85    // Large gap for heavily scaled image
-            }
+                gap: 85 // Much larger gap for heavily scaled image
+            },
+            {
+                src: './assets/images/sports-betting/fortunejack_logo.png',
+                alt: 'FortuneJack',
+                width: 'auto',
+                height: '60px',
+                scale: 1.3,
+                gap: 65 // Medium gap for moderately scaled image
+            },
+            {
+                src: './assets/images/casino_test/vave_text_logo_black.webp',
+                alt: 'Vave',
+                width: 'auto',
+                height: '60px',
+                scale: 1.0,
+                gap: 1    // Large gap for heavily scaled image
+            },
+            {
+                src: './assets/images/casino_test/rainbet_text_logo_black.webp',
+                alt: 'Rainbet',
+                width: 'auto',
+                height: '60px',
+                scale: 1.0,
+                gap: 1    // Large gap for heavily scaled image
+            },
         ],
         styling: {
             backgroundColor: 'transparent',
@@ -121,199 +129,183 @@ const AUTO_SLIDER_CONFIG = {
         animationSpeed: 25, // Different speed for variety
         images: [
             {
-                src: 'assets/images/laptop_test/stream1.jpg',
-                alt: 'Stream1',
+                src: 'assets/images/sports-betting/sport1.avif',
+                alt: 'Sport1',
                 width: 'auto',
                 height: '180px', // Bigger images
                 scale: 1.0, // Scale factor for individual sizing adjustments
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream2.jpg',
-                alt: 'Stream2',
+                src: 'assets/images/sports-betting/sport2.webp',
+                alt: 'Sport2',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream3.jpg',
-                alt: 'Stream3',
+                src: 'assets/images/sports-betting/sport3.jpeg',
+                alt: 'Sport3',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream4.png',
-                alt: 'Stream4',
+                src: 'assets/images/sports-betting/sport4.jpg',
+                alt: 'Sport4',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream5.jpg',
-                alt: 'Stream5',
+                src: 'assets/images/sports-betting/sport5.webp',
+                alt: 'Sport5',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream6.jpg',
-                alt: 'Stream6',
+                src: 'assets/images/sports-betting/sport6.webp',
+                alt: 'Sport6',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream7.jpg',
-                alt: 'Stream7',
+                src: 'assets/images/sports-betting/sport7.webp',
+                alt: 'Sport7',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream8.png',
-                alt: 'Stream8',
+                src: 'assets/images/sports-betting/sport8.webp',
+                alt: 'Sport8',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream9.png',
-                alt: 'Stream9',
+                src: 'assets/images/sports-betting/sport9.jpg',
+                alt: 'Sport9',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0
             },
             {
-                src: 'assets/images/laptop_test/stream10.jpg',
-                alt: 'Stream10',
+                src: 'assets/images/sports-betting/sport10.jpg',
+                alt: 'Sport10',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream11.png',
-                alt: 'Stream11',
+                src: 'assets/images/sports-betting/sport11.jpg',
+                alt: 'Sport11',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream12.jpg',
-                alt: 'Stream12',
+                src: 'assets/images/sports-betting/sport12.jpg',
+                alt: 'Sport12',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream13.webp',
-                alt: 'Stream13',
+                src: 'assets/images/sports-betting/sport13.avif',
+                alt: 'Sport13',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream14.jpg',
-                alt: 'Stream14',
+                src: 'assets/images/sports-betting/sport14.webp',
+                alt: 'Sport14',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream15.jpg',
-                alt: 'Stream15',
+                src: 'assets/images/sports-betting/sport15.jpg',
+                alt: 'Sport15',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream16.jpg',
-                alt: 'Stream16',
+                src: 'assets/images/sports-betting/sport16.webp',
+                alt: 'Sport16',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream17.jpg',
-                alt: 'Stream17',
+                src: 'assets/images/sports-betting/sport17.jpg',
+                alt: 'Sport17',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream18.webp',
-                alt: 'Stream18',
+                src: 'assets/images/sports-betting/sport18.jpeg',
+                alt: 'Sport18',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream19.jpg',
-                alt: 'Stream19',
+                src: 'assets/images/sports-betting/sport19.webp',
+                alt: 'Sport19',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream20.jpg',
-                alt: 'Stream20',
+                src: 'assets/images/sports-betting/sport20.jpg',
+                alt: 'Sport20',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream21.avif',
-                alt: 'Stream21',
+                src: 'assets/images/sports-betting/sport21.webp',
+                alt: 'Sport21',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream22.avif',
-                alt: 'Stream22',
+                src: 'assets/images/sports-betting/sport22.jpg',
+                alt: 'Sport22',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream23.jpg',
-                alt: 'Stream23',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream24.jpg',
-                alt: 'Stream24',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream25.png',
-                alt: 'Stream25',
+                src: 'assets/images/sports-betting/sport23.jpg',
+                alt: 'Sport23',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,

@@ -11,7 +11,7 @@ const CONTACT_PAGE_TITLE = "Contact Us | {{BRAND_NAME}}";     // ← Contact pag
 // ========== CONTACT PAGE HERO SECTION ==========
 const CONTACT_HERO = {
     title: "Get in Touch",                                    // ← Contact page main title
-    subtitle: "Have questions about our gaming laptop reviews? Need help choosing the perfect laptop? We're here to help you find the ideal gaming machine for your needs."  // ← Contact page description
+    subtitle: "Questions about our crypto sportsbook reviews? Need help choosing a licensed, crypto-friendly book? We’re here to help—always check local laws and bet responsibly."  // ← Contact page description
 };
 
 // ========== CONTACT FORM CONFIGURATION ==========
@@ -26,12 +26,13 @@ const CONTACT_FORM = {
     // Subject dropdown options
     subjectOptions: [
         { value: "", text: "Select a topic" },                // ← Default option
-        { value: "laptop-question", text: "Gaming Laptop Question" },
-        { value: "performance-inquiry", text: "Performance & Specs Inquiry" },
-        { value: "buying-question", text: "Laptop Buying Question" },
-        { value: "review-request", text: "Laptop Review Request" },
-        { value: "partnership", text: "Brand Partnership Inquiry" },
-        { value: "technical-issue", text: "Technical Issue" },
+        { value: "sportsbook-question", text: "Sportsbook Question" },
+        { value: "licensing-compliance", text: "Licensing & Compliance" },
+        { value: "banking-limits", text: "Banking (Coins/Networks) & Limits" },
+        { value: "bonus-terms", text: "Bonus Terms & Rollover" },
+        { value: "review-request", text: "Operator Review Request" },
+        { value: "partnership", text: "Partnership / Affiliate Inquiry" },
+        { value: "technical-issue", text: "Site Technical Issue" },
         { value: "general-inquiry", text: "General Inquiry" },
         { value: "other", text: "Other" }
     ],
@@ -45,7 +46,7 @@ const CONTACT_FORM = {
     },
     
     placeholders: {
-        message: "Tell us about your gaming laptop question or how we can help you find the perfect laptop..."
+        message: "Tell us about your sportsbook question (licensing, coins, limits, bonus terms, availability)..."
     },
     
     // Submit button text
@@ -56,16 +57,16 @@ const CONTACT_FORM = {
 
 // ========== CTA BOX CONFIGURATION ==========
 const CONTACT_CTA_BOX = {
-    title: "Ready to Find the Best Gaming Laptops?",              // ← CTA box main title
-    subtitle: "Check out our expertly reviewed Top 10 gaming laptop recommendations!", // ← CTA box description
+    title: "Ready to Find the Best Crypto Sportsbooks?",              // ← CTA box main title
+    subtitle: "See our verified Top 10—bonuses, licensing, limits and features.", // ← CTA box description
     
     // Icon configuration (FontAwesome classes)
-    titleIcon: "fas fa-laptop",                              // ← Icon before title
+    titleIcon: "fas fa-football-ball",                              // ← Icon before title
     buttonIcon: "fas fa-star",                               // ← Icon in button
     
     // Button configuration
-    buttonText: "View Our Top 10 Gaming Laptops",                 // ← Button text
-    buttonLink: "./index.html#index.html",                       // ← Button destination link
+    buttonText: "View Our Top 10 Sportsbooks",                 // ← Button text
+    buttonLink: "./index.html#top10",                       // ← Button destination link
     
     // Styling options
     showTitleIcon: true,                                     // ← Show/hide title icon
@@ -99,10 +100,18 @@ buttonText: "View All Reviews"
 
 // ========== CONTACT INFORMATION ==========
 const CONTACT_INFO = {
-    email: "contact@LaptopWorld.com",                            // ← Your contact email "eg. contact@yoursite.com"
-    phone: "020 7946 0000",                              // ← Your phone number "eg. +1 (555) 123-4567"
-    address: "888 Main St, London, UK",               // ← Your address "eg. 123 Main St, City, State 12345"
-    responseTime: "1-2 hours",                                 // ← Typical response time "eg. 24 hours"
+    // Content values
+    email: "contact@CryptoSportsbookScout.com",              // ← Your contact email
+    phone: "",                                               // ← Your phone number
+    address: "",                                             // ← Your address
+    responseTime: "1-2 hours",                               // ← Typical response time
+
+    // Visibility toggles (set to false to hide)
+    showEmail: false,
+    showPhone: false,
+    showAddress: false,
+    showResponseTime: true,
+    showSocial: false,
     
     // Social media links
     socialMedia: {
@@ -116,41 +125,41 @@ const CONTACT_INFO = {
 // ========== FAQ CONFIGURATION ==========
 const FAQ_CONFIG = {
     title: "Frequently Asked Questions",                     // ← FAQ section title
-    subtitle: "Quick answers to common gaming laptop questions",           // ← FAQ section subtitle
+    subtitle: "Quick answers to common crypto sportsbook questions",           // ← FAQ section subtitle
     
     // FAQ items - add/edit/remove as needed
     items: [
         {
-            question: "How do you test gaming laptops?",
-            answer: "We thoroughly test each gaming laptop for performance, build quality, display quality, battery life, thermal management, and user experience. Our reviews include benchmark testing, real-world gaming sessions, and long-term reliability assessment."
+            question: "How do you evaluate sportsbooks?",
+            answer: "We verify licensing references, check coin/network support, review bonus terms (rollover/expiry), test live betting and cashout behavior, and note documented limits/responsible-gambling tools."
         },
         {
-            question: "Are your laptop reviews unbiased?",
-            answer: "Yes, our reviews are completely honest and unbiased. We only recommend laptops that meet our strict performance and quality standards, regardless of affiliate commissions. We test every laptop extensively before making recommendations."
+            question: "Are your reviews independent?",
+            answer: "Yes—our editorial stance is independent. Commissions never affect ratings. We prioritize transparent licensing, clear terms, and product reliability."
         },
         {
-            question: "What should I look for in a gaming laptop?",
-            answer: "Key factors include a powerful GPU (RTX 4060 or better), sufficient RAM (16GB minimum), fast storage (SSD), good cooling system, high refresh rate display (144Hz+), and reliable build quality. We evaluate all these aspects in our reviews."
+            question: "What should I look for in a crypto sportsbook?",
+            answer: "Confirm licensing, supported coins/networks, bonus terms (rollover/expiry), live features (cashout/builder/streams), responsible gambling tools, and territorial availability."
         },
         {
-            question: "How much should I spend on a gaming laptop?",
-            answer: "Gaming laptops range from £800 for entry-level to £4000+ for premium models. For solid 1080p gaming, expect £1200-2000. For 1440p/4K gaming, budget £2000-3500. We provide clear value recommendations in each price category."
+            question: "Do you accept players from my country?",
+            answer: "Availability varies by operator and regulation. Always check the operator’s territory list and your local laws before joining. We do not provide legal advice."
         },
         {
-            question: "Which brands make the best gaming laptops?",
-            answer: "Top gaming laptop brands include ASUS ROG, MSI, Razer, Dell Alienware, HP Omen, Acer Predator, and Lenovo Legion. Each has strengths in different areas - we highlight the best models from each manufacturer in our reviews."
+            question: "How fast are crypto withdrawals?",
+            answer: "Typically fast once verification is complete and depending on the network fee/speed. Many operators process within minutes to hours; always confirm limits and timelines."
         },
         {
-            question: "How important is display quality for gaming?",
-            answer: "Display quality is crucial for gaming. Look for high refresh rates (144Hz-240Hz), low input lag, good color accuracy, and appropriate resolution. We test display performance extensively and recommend the best gaming displays in each category."
+            question: "Do you list welcome offers?",
+            answer: "We summarize current promos where possible and link to official pages. Offers change frequently—read the terms on the operator site before claiming."
         },
         {
-            question: "Do gaming laptops have good battery life?",
-            answer: "Gaming laptops typically have 3-6 hours of general use and 1-3 hours while gaming. Some ultrabooks with gaming capability offer 8+ hours for productivity tasks. We clearly indicate battery performance in each review."
+            question: "What if I have a problem with an operator?",
+            answer: "Use the operator’s help center/live chat first. If unresolved, share details with us (no personal data) and we’ll factor the issue into future reviews."
         },
         {
-            question: "Can you review a specific gaming laptop?",
-            answer: "Absolutely! We love hearing from our community. Send us your suggestions using the form above, and we'll consider it for our next review cycle if it meets our testing criteria and availability."
+            question: "Can you review a specific sportsbook?",
+            answer: "Yes—send a request with links to license info, bonus page, and help center. We prioritize operators with transparent documentation."
         }
     ]
 };
@@ -304,34 +313,50 @@ class ContactPageManager {
      * Load contact information from config
      */
     loadContactInfo() {
-        // Update email
+        // Email
+        const emailItem = document.querySelector('#contact-email')?.closest('.contact-info-item');
         const emailElement = document.getElementById('contact-email');
-        if (emailElement && CONTACT_INFO.email) {
+        const showEmail = CONTACT_INFO.showEmail !== false && !!CONTACT_INFO.email;
+        if (emailItem) emailItem.style.display = showEmail ? '' : 'none';
+        if (showEmail && emailElement) {
             emailElement.textContent = CONTACT_INFO.email;
             emailElement.href = `mailto:${CONTACT_INFO.email}`;
         }
-        
-        // Update phone
+
+        // Phone
+        const phoneItem = document.querySelector('#contact-phone')?.closest('.contact-info-item');
         const phoneElement = document.getElementById('contact-phone');
-        if (phoneElement && CONTACT_INFO.phone) {
+        const showPhone = CONTACT_INFO.showPhone === true && !!CONTACT_INFO.phone;
+        if (phoneItem) phoneItem.style.display = showPhone ? '' : 'none';
+        if (showPhone && phoneElement) {
             phoneElement.textContent = CONTACT_INFO.phone;
             phoneElement.href = `tel:${CONTACT_INFO.phone}`;
         }
-        
-        // Update address
+
+        // Address
         const addressElement = document.getElementById('contact-address');
-        if (addressElement && CONTACT_INFO.address) {
+        const addressItem = addressElement?.closest('.contact-info-item');
+        const showAddress = CONTACT_INFO.showAddress === true && !!CONTACT_INFO.address;
+        if (addressItem) addressItem.style.display = showAddress ? '' : 'none';
+        if (showAddress && addressElement) {
             addressElement.textContent = CONTACT_INFO.address;
         }
-        
-        // Update response time
+
+        // Response Time (4th item hard-coded in HTML)
+        const responseTimeItem = document.querySelector('.contact-info-item:nth-child(4)');
         const responseTimeElement = document.querySelector('.contact-info-item:nth-child(4) p:last-child');
-        if (responseTimeElement && CONTACT_INFO.responseTime) {
+        const showResponse = CONTACT_INFO.showResponseTime !== false && !!CONTACT_INFO.responseTime;
+        if (responseTimeItem) responseTimeItem.style.display = showResponse ? '' : 'none';
+        if (showResponse && responseTimeElement) {
             responseTimeElement.textContent = CONTACT_INFO.responseTime;
         }
-        
-        // Update social media links
-        this.loadSocialLinks();
+
+        // Social media section (Row 3 spans columns)
+        const socialContainer = document.getElementById('contact-social');
+        const socialItem = socialContainer?.closest('.contact-info-item');
+        const showSocial = CONTACT_INFO.showSocial !== false;
+        if (socialItem) socialItem.style.display = showSocial ? '' : 'none';
+        if (showSocial) this.loadSocialLinks();
     }
     
     /**

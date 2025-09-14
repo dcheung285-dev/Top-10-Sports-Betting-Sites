@@ -5,7 +5,7 @@ BRAND CONFIGURATION SYSTEM
 🎯 CHANGE YOUR BRAND NAME HERE - ONLY ONE LINE TO EDIT:
 */
 
-const BRAND_NAME = "Laptop World";  // ← CHANGE THIS LINE ONLY!
+const BRAND_NAME = "Crypto Sportsbook Scout";  // ← CHANGE THIS LINE ONLY!
 
 /*
 ===========================================
@@ -18,7 +18,7 @@ Don't edit anything below unless you need advanced customization.
 const BRAND_CONFIG = {
     // Logo Configuration
     logo: {
-        src: "./assets/images/laptop_test/tech_icon_logo.png",
+        src: "./assets/images/sports-betting/bet-icon4.png",
         alt: BRAND_NAME + " Logo",
         width: "auto",
         height: "32px"
@@ -27,7 +27,7 @@ const BRAND_CONFIG = {
     // Brand Text Configuration
     text: {
         name: BRAND_NAME,
-        tagline: "Find Your Perfect Laptop",
+        tagline: "Bet Smarter with Crypto-Friendly Sportsbooks",
         showText: true,
         showTagline: true
     },

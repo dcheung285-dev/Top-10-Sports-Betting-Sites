@@ -38,3 +38,7 @@ Generate a **curated Top 10 list** of {niche} in **markdown layout** with the fo
 # Final Output
 Deliver a **Top 10 {niche}** list in the above format, with full details per product. Do not make up information use the information from web search using reliable websites 
 
+
+----
+
+using this information from the chat and prompt and code update all of the code in the config files using the infomation I have given you in the prompt/chat as you can tell the niche is top 10 best igaming global worldwide crypto-focused sprts betting websites

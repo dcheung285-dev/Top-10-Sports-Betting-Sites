@@ -8,8 +8,8 @@ Configure individual blog posts with all their content, images, categories, and 
 
 // ========== BLOG HERO SECTION ==========
 const BLOG_HERO = {
-    title: "Gaming Laptop Blog",                                    // ← Blog page main title
-    subtitle: "Expert reviews, performance analysis, and the latest trends in gaming laptops. Get insider knowledge to choose the most powerful and reliable gaming machines."  // ← Blog page description
+    title: "Crypto Sportsbook Blog",                                    // ← Blog page main title
+    subtitle: "Verified bonuses, licensing insights, banking limits, and live-betting strategy for crypto-friendly sportsbooks. Always check local laws and play responsibly."  // ← Blog page description
 };
 
 // ========== BLOG CTA BANNER CONFIGURATION ==========
@@ -28,11 +28,11 @@ const BLOG_CTA_BANNER = {
         scale: 1.0,                                            // ← Reset to normal scale for testing
     },
     content: {
-        icon: "fas fa-laptop",                                  // ← Header icon
-        title: "Looking for the Best Gaming Laptops?",      // ← Main headline
-        subtitle: "Don't waste hours researching. We've already done the work for you!", // ← Description text
+        icon: "fas fa-football-ball",                                  // ← Header icon
+        title: "Looking for the Best Crypto Sportsbooks?",      // ← Main headline
+        subtitle: "We verify bonuses, licenses, coin support and key features—so you don't have to.", // ← Description text
         button: {
-            text: "View Our Top 10 Ranked List",              // ← Button text
+            text: "View Our Top 10 Sportsbooks",              // ← Button text
             icon: "fas fa-trophy",                                // ← Button icon
             link: "./index.html#top10"                         // ← Button link
         }
@@ -41,62 +41,62 @@ const BLOG_CTA_BANNER = {
 
 // ========== INDIVIDUAL BLOG POSTS CONFIGURATION ==========
 const BLOG_POSTS = {
-    // Blog Post 1 - MacBook Pro M4 Max Review
+    // Blog Post 1 - Stake Review
     post1: {
-        title: "MacBook Pro M4 Max Review 2025: Why It's Our #1 Pick",
-        excerpt: "Discover why the MacBook Pro M4 Max earned our top ranking with exceptional performance, stunning display, and industry-leading battery life. Our comprehensive review covers everything from creative workflows to gaming performance.",
-        image: "./assets/images/laptop_test/macbook-pro.jpg",
-        imageAlt: "MacBook Pro M4 Max review and analysis",
+        title: "Stake Review 2025: Fast Crypto Bets, Faster Payouts",
+        excerpt: "Stake is a crypto-first sportsbook with 20+ coins, rapid withdrawals, live streaming and a solid Same Game Multi. We cover licensing context, limits, and key features.",
+        image: "./assets/images/sports-betting/stake_website.webp",
+        imageAlt: "Stake crypto sportsbook review",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
         imagePositioning: {
-            objectPosition: 'top center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
+            objectPosition: 'top left',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 15, 2024",
-        category: "Laptop Review",
+        date: "September 10, 2025",
+        category: "Sportsbook Review",
         categoryColor: "primary",
-        link: "./index.html#editors-choice-review",
+        link: "./index.html#review-1",
         badges: [
             { text: "Editor's Pick", type: "primary" },
-            { text: "Top Rated", type: "success" }
+            { text: "Best UX", type: "success" }
         ],
-        ctaText: "💻 Ready to buy?",
-        ctaMessage: "Shop <a href=\"#macbook-pro\" class=\"text-primary\">MacBook Pro M4 Max</a> and save $300 + get free AppleCare+!"
+        ctaText: "⚡ Ready to bet?",
+        ctaMessage: "Visit <a href=\"https://stake.com/\" class=\"text-primary\">Stake</a> and bet crypto responsibly."
     },
 
-    // Blog Post 2 - Dell XPS 15 Plus Review
+    // Blog Post 2 - Cloudbet Review
     post2: {
-        title: "Dell XPS 15 Plus Review: Premium Design Meets Performance",
-        excerpt: "The Dell XPS 15 Plus combines stunning premium design with powerful Intel Core i9 performance and gorgeous 4K+ OLED display. Learn why it's the perfect choice for professionals who value aesthetics.",
-        image: "./assets/images/laptop_test/Dell_XPS_15_Plus.jpg",
-        imageAlt: "Dell XPS 15 Plus comprehensive review",
+        title: "Cloudbet Review: High Limits, 40+ Coins",
+        excerpt: "Launched in 2013, Cloudbet offers big-limit capability, reliable liquidity and a cashier supporting 40+ cryptocurrencies. We walk through bonuses, limits and licensing.",
+        image: "./assets/images/sports-betting/cloudbet_website.png",
+        imageAlt: "Cloudbet crypto sportsbook review",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
         imagePositioning: {
-            objectPosition: 'center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
+            objectPosition: 'top left',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 12, 2024",
-        category: "Laptop Review",
+        date: "September 9, 2025",
+        category: "Sportsbook Review",
         categoryColor: "accent",
         link: "./index.html#review-2",
         badges: [
-            { text: "Premium Design", type: "secondary" },
-            { text: "OLED Display", type: "accent" }
+            { text: "High Limits", type: "secondary" },
+            { text: "40+ Coins", type: "accent" }
         ],
-        ctaText: "💎 Shop premium:",
-        ctaMessage: "Experience <a href=\"#dell-xps\" class=\"text-primary\">Dell XPS 15 Plus</a> and save 13% + get premium support!"
+        ctaText: "🚀 Bet big:",
+        ctaMessage: "Visit <a href=\"https://www.cloudbet.com/\" class=\"text-primary\">Cloudbet</a> to explore high limits and 40+ coins."
     },
 
-    // Blog Post 3 - Laptop Buying Guide
+    // Blog Post 3 - Sportsbook Buying Guide
     post3: {
-        title: "Gaming Laptop Buying Guide: How to Choose the Perfect Machine",
-        excerpt: "Learn essential factors when buying a gaming laptop, from choosing the right CPU and GPU to understanding display specifications. Our expert guide covers everything you need to make the perfect choice.",
-        image: "./assets/images/laptop_test/blog1.webp",
-        imageAlt: "Gaming laptop buying guide",
+        title: "Crypto Sportsbook Guide: How to Choose the Right Book",
+        excerpt: "Licensing, banking (coins/networks), limits, features (cashout/builders/streams) and promos—our checklist for picking a crypto-friendly sportsbook.",
+        image: "./assets/images/sports-betting/guide.jpg",
+        imageAlt: "Crypto sportsbook guide",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
@@ -104,24 +104,24 @@ const BLOG_POSTS = {
             objectPosition: 'center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 10, 2024",
-        category: "Buying Guide",
+        date: "September 8, 2025",
+        category: "Sportsbook Guide",
         categoryColor: "primary",
         link: "./blogpost1.html",
         badges: [
-            { text: "Buying Guide", type: "primary" },
+            { text: "Sportsbook Guide", type: "primary" },
             { text: "Expert Tips", type: "secondary" }
         ],
-        ctaText: "🎯 Need the perfect laptop?",
-        ctaMessage: "Find your ideal gaming laptop in our <a href=\"./index.html#top10\" class=\"text-primary\">Top 10 rankings</a>!"
+        ctaText: "🎯 Need the right book?",
+        ctaMessage: "Find your match in our <a href=\"./index.html#top10\" class=\"text-primary\">Top 10 sportsbooks</a>."
     },
 
-    // Blog Post 4 - Provably Fair Gaming
+    // Blog Post 4 - Cashout vs. Builders
     post4: {
-        title: "RTX 4090 vs RTX 4080: Which GPU Powers the Best Gaming Laptops?",
-        excerpt: "Compare the RTX 4090 and RTX 4080 in gaming laptops. Discover performance differences, power consumption, thermal management, and which GPU delivers the best value for high-end gaming laptops.",
-        image: "./assets/images/laptop_test/gpu.jpg",
-        imageAlt: "RTX 4090 vs RTX 4080 gaming laptop comparison",
+        title: "Cash Out vs Bet Builders: Which Adds More Value?",
+        excerpt: "We compare cashout implementations and same-game builders across major crypto sportsbooks—when to use each and pitfalls to avoid.",
+        image: "./assets/images/sports-betting/bet-builder.png",
+        imageAlt: "Cash out vs bet builder explainer",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
@@ -129,24 +129,24 @@ const BLOG_POSTS = {
             objectPosition: 'center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 8, 2024",
-        category: "GPU Guide",
+        date: "September 7, 2025",
+        category: "Strategy",
         categoryColor: "success",
         link: "./blogpost2.html",
         badges: [
-            { text: "RTX 4090", type: "secondary" },
-            { text: "Performance", type: "success" }
+            { text: "Cash Out", type: "secondary" },
+            { text: "Builders", type: "success" }
         ],
-        ctaText: "🎮 Want top gaming performance?",
-        ctaMessage: "Check out <a href=\"#razer-blade\" class=\"text-primary\">RTX 4090 gaming laptops</a> for ultimate performance!"
+        ctaText: "📊 Learn the edges:",
+        ctaMessage: "See our <a href=\"./index.html#top10\" class=\"text-primary\">Top 10 sportsbooks</a> for strong builders and cashout."
     },
 
-    // Blog Post 5 - Bonus Guide
+    // Blog Post 5 - Bonus/Rollover Guide
     post5: {
-        title: "Gaming Laptop Cooling Systems: Thermal Management Guide 2025",
-        excerpt: "Master gaming laptop cooling with our comprehensive thermal management guide. Learn about liquid metal cooling, vapor chambers, fan curves, and how to maintain peak performance during intense gaming sessions.",
-        image: "./assets/images/laptop_test/cooling.jpg",
-        imageAlt: "Gaming laptop cooling system and thermal management guide",
+        title: "Crypto Bonus Terms Explained: Rollover, Expiry, Limits",
+        excerpt: "Read crypto bonus terms like a pro—rollover math, expiry windows, market restrictions, and how to avoid common traps.",
+        image: "./assets/images/sports-betting/bonus-terms.jpg",
+        imageAlt: "Crypto sportsbook bonus terms guide",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
@@ -154,41 +154,41 @@ const BLOG_POSTS = {
             objectPosition: 'center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 5, 2024",
-        category: "Cooling Guide",
+        date: "September 6, 2025",
+        category: "Bonus Guide",
         categoryColor: "success",
         link: "./blogpost3.html",
         badges: [
-            { text: "Cooling", type: "success" },
-            { text: "Performance", type: "secondary" }
+            { text: "Rollover", type: "success" },
+            { text: "Expiry", type: "secondary" }
         ],
-        ctaText: "🌡️ Keep your laptop cool:",
-        ctaMessage: "Find <a href=\"#asus-rog\" class=\"text-primary\">laptops with advanced cooling</a> in our top rankings!"
+        ctaText: "🎁 Claim smart:",
+        ctaMessage: "Compare current offers in our <a href=\"./index.html#top10\" class=\"text-primary\">Top 10 list</a>."
     },
 
-    // Blog Post 6 - Roobet Review
+    // Blog Post 6 - Sportsbet.io Review
     post6: {
-        title: "Razer Blade 16 Review: Premium Gaming Excellence 2025",
-        excerpt: "In-depth review of the Razer Blade 16 gaming laptop. Discover Intel Core i9-14900HX performance, premium build quality, advanced cooling, and why it's the ultimate choice for gaming enthusiasts.",
-        image: "./assets/images/laptop_test/Razer_Blade_16.webp",
-        imageAlt: "Razer Blade 16 gaming laptop review",
+        title: "Sportsbet.io Review: Feature-Rich Crypto Betting",
+        excerpt: "Cash Out, Price Boosts, builders and a modern crypto cashier. We cover license, promos, and partnerships.",
+        image: "./assets/images/sports-betting/sportsbet.io_website.png",
+        imageAlt: "Sportsbet.io crypto sportsbook review",
         
         // Image positioning and scaling settings
         imageScale: 1.0,                                               // Scale for blog post image (1.0 = 100%, 1.2 = 120%, etc.)
         imagePositioning: {
-            objectPosition: 'top center',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
+            objectPosition: 'top left',                                  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
             objectFit: 'cover'                                         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
         },
-        date: "December 3, 2024",
-        category: "Laptop Review",
+        date: "September 5, 2025",
+        category: "Sportsbook Review",
         categoryColor: "accent",
         link: "./index.html#review-7",
         badges: [
-            { text: "Premium Gaming", type: "accent" },
-            { text: "Intel i9", type: "primary" }
+            { text: "Feature Set", type: "accent" },
+            { text: "Price Boosts", type: "primary" }
         ],
-        ctaText: "🎮 Want premium gaming?",
-        ctaMessage: "Check out the <a href=\"./index.html#review-7\" class=\"text-primary\">Razer Blade 16</a> in our top rankings!"
+        ctaText: "🏟️ Want feature depth?",
+        ctaMessage: "Explore <a href=\"https://sportsbet.io/\" class=\"text-primary\">Sportsbet.io</a> and bet responsibly."
     }
 };
 

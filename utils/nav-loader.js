@@ -77,7 +77,7 @@ Brand settings are managed by Configurations/brand-config.js
         <!-- Search Bar Container -->
         <div class="nav-search-container" id="navSearchContainer">
             <div class="nav-search-wrapper">
-                <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search laptops, reviews, guides...">
+                <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search sportsbooks, reviews, guides...">
                 <button class="nav-search-close" id="navSearchClose">
                     <i class="fas fa-times"></i>
                 </button>
@@ -91,22 +91,21 @@ Brand settings are managed by Configurations/brand-config.js
                 <div class="search-section">
                     <div class="search-section-title">Popular Searches</div>
                     <div class="popular-searches">
-                        <a href="index.html" class="search-option">
-                            <span class="icon">💻</span>
-                            <span>Best Gaming Laptops</span>
+                        <a href="index.html#top10" class="search-option">
+                            <span class="icon">🏆</span>
+                            <span>Best Crypto Sportsbooks</span>
                         </a>
-                        <a href="index.html##editors-choice-review" class="search-option">
+                        <a href="index.html#review-3" class="search-option">
                             <span class="icon">👑</span>
-                            <span>Editor's Pick</span>
+                            <span>Editor's Choice</span>
                         </a>
-                        <a href="index.html#editors-choice-review" class="search-option">
-                            <span class="icon">🚀</span>
-                            <span>MacBook Pro M4 Max</span>
+                        <a href="https://www.rocketpot.io/" class="search-option">
+                            <span class="icon">🏈</span>
+                            <span>Rocketpot Casino</span>
                         </a>
-                        
-                        <a href="index.html#compare" class="search-option">
+                        <a href="index.html#comparison" class="search-option">
                             <span class="icon">⚖️</span>
-                            <span>Compare Laptops</span>
+                            <span>Compare Sportsbooks</span>
                         </a>
                     </div>
                 </div>
@@ -121,19 +120,11 @@ Brand settings are managed by Configurations/brand-config.js
                         </a>
                         <a href="blog.html" class="search-option">
                             <span class="icon">📰</span>
-                            <span>Blog & News</span>
+                            <span>Blog & Guides</span>
                         </a>
                         <a href="contact.html" class="search-option">
                             <span class="icon">📞</span>
                             <span>Contact Us</span>
-                        </a>
-                        <a href="podcast.html" class="search-option">
-                            <span class="icon">🎧</span>
-                            <span>Podcasts</span>
-                        </a>
-                        <a href="streaming.html" class="search-option">
-                            <span class="icon">🎥</span>
-                            <span>Streaming</span>
                         </a>
                         <a href="contact.html#faq" class="search-option">
                             <span class="icon">❓</span>
