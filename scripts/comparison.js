@@ -167,46 +167,52 @@ class ProductComparison {
             console.log('✅ Manual editor\'s choice added to comparison options:', this.productData['editors-choice']);
             console.log('📊 Total products in comparison data:', Object.keys(this.productData).length);
         } else {
-            // If not using manual override, add the selected product as Editor's Choice
+            // If not using manual override: label the selected product itself, do not duplicate
             const selectedProductKey = editorsConfig.selectedProduct || 'product1';
             const selectedProduct = window.PRODUCTS_CONFIG?.[selectedProductKey];
-            
-            if (selectedProduct) {
-                // Add selected product as editor's choice with same structure as regular products
-                this.productData['editors-choice'] = {
+
+            if (selectedProduct && this.productData[selectedProductKey]) {
+                const currentName = this.productData[selectedProductKey].name || selectedProduct.name || selectedProductKey;
+                if (!/\(Editor\'s Choice\)/i.test(currentName)) {
+                    this.productData[selectedProductKey].name = `${currentName} (Editor's Choice)`;
+                }
+                this.productData[selectedProductKey].rank = "Editor's Choice";
+
+                // Ensure no separate 'editors-choice' ghost entry remains
+                if (this.productData['editors-choice']) {
+                    delete this.productData['editors-choice'];
+                }
+                console.log(`✅ Labeled ${selectedProductKey} as Editor's Choice without duplication.`);
+            } else if (selectedProduct) {
+                // Fallback: if for some reason the product wasn't loaded, add a single entry
+                this.productData[selectedProductKey] = {
                     name: `${selectedProduct.name} (Editor's Choice)`,
                     rating: selectedProduct.rating,
-                    // Physical Products fields
                     price: selectedProduct.price,
                     originalPrice: selectedProduct.originalPrice,
                     discount: selectedProduct.discount,
-                    // Casino Websites fields
-                    welcomeBonus: selectedProduct.welcomeBonus, 
+                    welcomeBonus: selectedProduct.welcomeBonus,
                     welcomePackage: selectedProduct.welcomePackage,
                     addedBonus: selectedProduct.addedBonus,
-                    // Sports Betting fields
                     signupBonus: selectedProduct.signupBonus,
                     oddsBoost: selectedProduct.oddsBoost,
                     freeBet: selectedProduct.freeBet,
-                    // Software/SaaS fields
                     monthlyPrice: selectedProduct.monthlyPrice,
                     yearlyPrice: selectedProduct.yearlyPrice,
                     trialPeriod: selectedProduct.trialPeriod,
-                    // Other fields
-                    features: selectedProduct.features || [], // Keep full feature objects with icons
-                    pros: selectedProduct.perks || [], // Full perk objects with text + icon for highlights
-                    perks: selectedProduct.perks || [], // Full perk objects with text + icon
+                    features: selectedProduct.features || [],
+                    pros: selectedProduct.perks || [],
+                    perks: selectedProduct.perks || [],
                     specifications: this.extractSpecifications(selectedProduct),
                     affiliateLink: selectedProduct.affiliateLink,
                     reviewCount: selectedProduct.reviewCount,
                     rank: "Editor's Choice"
                 };
-                
-                console.log('✅ Selected product editor\'s choice added to comparison options:', this.productData['editors-choice']);
+                console.log(`✅ Added fallback single entry for ${selectedProductKey} labeled as Editor's Choice.`);
             } else {
                 console.log('❌ Selected product not found for editor\'s choice:', selectedProductKey);
             }
-            
+
             console.log('❌ Manual editor\'s choice not added - useManualOverride:', editorsConfig.useManualOverride, 'manualOverride exists:', !!editorsConfig.manualOverride);
         }
     }
@@ -1149,23 +1155,98 @@ class ProductComparison {
      * Find best value product
      */
     findBestValue(products) {
-        // Simple heuristic: highest rating with lowest price
+        const templateType = (window.TEMPLATE_TYPE || 'physical_products').toLowerCase();
+
+        // Website-review templates: score based on universal template fields
+        if (templateType === 'sports_betting' || templateType === 'casino_websites') {
+            const scored = products.map(p => ({ product: p, score: this.computeWebsiteValueScore(p.data, templateType) }));
+            if (scored.length === 0) return { name: 'Unable to determine', key: null };
+            const bestEntry = scored.reduce((best, curr) => (curr.score > best.score ? curr : best), scored[0]);
+            const best = bestEntry.product;
+            return { name: best.data.name || best.key, key: best.key };
+        }
+
+        // Default: highest rating-to-price ratio
         const withPrices = products.filter(p => p.data.price);
         if (withPrices.length === 0) return { name: 'Unable to determine', key: null };
         
         const best = withPrices.reduce((best, current) => {
-            const currentPrice = parseFloat(current.data.price.replace(/[^0-9.]/g, ''));
-            const bestPrice = parseFloat(best.data.price.replace(/[^0-9.]/g, ''));
+            const currentPrice = parseFloat(String(current.data.price).replace(/[^0-9.]/g, '')) || Infinity;
+            const bestPrice = parseFloat(String(best.data.price).replace(/[^0-9.]/g, '')) || Infinity;
             const currentRating = current.data.rating || 0;
             const bestRating = best.data.rating || 0;
             
-            const currentValue = currentRating / currentPrice;
-            const bestValue = bestRating / bestPrice;
+            const currentValue = currentPrice > 0 ? currentRating / currentPrice : 0;
+            const bestValue = bestPrice > 0 ? bestRating / bestPrice : 0;
             
             return currentValue > bestValue ? current : best;
         });
         
         return { name: best.data.name || best.key, key: best.key };
+    }
+
+    /**
+     * Compute value score for website-review templates
+     */
+    computeWebsiteValueScore(productData, templateType) {
+        const rating = productData.rating || 0;
+        let fields = [];
+        if (templateType === 'sports_betting') {
+            fields = [productData.signupBonus, productData.oddsBoost, productData.freeBet];
+        } else {
+            fields = [productData.welcomeBonus, productData.welcomePackage, productData.addedBonus];
+        }
+
+        let score = rating * 10; // baseline influence from quality
+        const weights = [1.0, 0.8, 0.6];
+        fields.forEach((text, idx) => {
+            score += this.parseOfferScore(String(text || ''), templateType) * weights[idx];
+        });
+        return score;
+    }
+
+    /**
+     * Parse offer string into a numeric score
+     */
+    parseOfferScore(text, templateType) {
+        if (!text) return 0;
+        let score = 0;
+
+        // Percentages
+        const percentMatches = text.match(/(\d{1,3})\s*%/g);
+        if (percentMatches) {
+            const percents = percentMatches.map(m => parseFloat(m));
+            score += Math.max(...percents);
+        }
+
+        // Currency or token amounts
+        const amountMatches = text.match(/(?:\$|€|£|USDT|USD|EUR|BTC|ETH|USDC)?\s*([0-9]{1,3}(?:,[0-9]{3})*|[0-9]+(?:\.[0-9]+)?)\s*(?:USDT|USD|EUR|BTC|ETH|USDC)?/gi);
+        if (amountMatches) {
+            const numeric = amountMatches
+                .map(m => parseFloat(m.replace(/[^0-9.]/g, '')))
+                .filter(n => !isNaN(n) && isFinite(n));
+            if (numeric.length) {
+                const maxAmount = Math.max(...numeric);
+                score += Math.sqrt(maxAmount); // dampen
+            }
+        }
+
+        // Free spins
+        const fsMatch = text.match(/(\d{1,4})\s*(?:FS|free\s*spins?)/i);
+        if (fsMatch) score += parseFloat(fsMatch[1]) * 0.2;
+
+        // Keywords
+        const keywords = [
+            { re: /(no\s*wager|no\s*wagering|low\s*rollover)/i, points: 25 },
+            { re: /(cash\s*out)/i, points: 10 },
+            { re: /(daily|weekly|monthly)\s*bonuses?/i, points: 12 },
+            { re: /(vip|loyalty|rewards?)/i, points: 8 },
+            { re: /(odds\s*boost|price\s*boost)/i, points: 14 }
+        ];
+        keywords.forEach(k => { if (k.re.test(text)) score += k.points; });
+
+        if (score === 0 && text.trim().length > 0) score += 5;
+        return score;
     }
 
     /**

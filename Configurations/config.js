@@ -1653,7 +1653,7 @@ const PRODUCTS_CONFIG = {
     
     // Product 10 Configuration - Rainbet — Fast Payouts, Crypto-First
     product10: {
-        name: "Rainbet — Fast Payouts, Crypto-First",
+        name: "Rainbet",
         description: "Rainbet runs a crypto casino and sportsbook with instant BTC deposits/withdrawals and broad market coverage. Operated by RBGAMING N.V. and licensed in Anjouan (Comoros).",
         productLogo: "./assets/images/casino_test/rainbet_text_logo_black.webp",
         productImage: "./assets/images/sports-betting/rainbet_website.png",
