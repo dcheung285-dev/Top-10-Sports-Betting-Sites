@@ -1897,7 +1897,7 @@ const SECTION_TITLES = {
     comparisonSection: {
         title: 'Sportsbook Comparison',                       // ← Title for comparison section
         subtitle: 'Select 2-3 sportsbooks to compare licensing, coins, features and promos side by side', // ← Subtitle
-        placeholderTitle: 'Select products to compare',   // ← Placeholder title when no products selected
+        placeholderTitle: 'Select sportsbooks to compare',   // ← Placeholder title when no products selected
         placeholderDescription: 'Choose 2-3 products from the dropdowns above to see a detailed comparison', // ← Placeholder description
         resultsTitle: 'Comparison Results',               // ← Title shown above comparison results
         resultsSubtitle: 'Comparing {count} products',    // ← Subtitle for results (use {count} for product count)
