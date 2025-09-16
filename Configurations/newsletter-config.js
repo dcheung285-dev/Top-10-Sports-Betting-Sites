@@ -38,9 +38,9 @@ const NEWSLETTER_CONFIG = {
         heroSubtitle: "Stay updated with new reviews, RTP/volatility explainers, and slot feature guides.",
         mainTitle: "Why Subscribe?",
         mainParagraphs: [
-            "Get concise, research-backed breakdowns of RTP variants and volatility so you can pick slots wisely.",
-            "See real feature explanations — scatter pays, tumbles, cluster multipliers, and Megaways — with examples.",
-            "Be first to know about big provider promos like Drops & Wins and evergreen picks to try in demo mode."
+            "Discover the best BTC, ETH, and USDT sportsbooks with fast, low-fee crypto deposits and same-day payouts.",
+            "Compare betting markets, live betting tools, parlays, and cash-out options — plus real limits, KYC rules, and geo availability.",
+            "Get alerts on verified crypto bonuses, supported coins and networks, and wallet tips to reduce fees and avoid payout delays."
         ]
     },
     // Content settings
