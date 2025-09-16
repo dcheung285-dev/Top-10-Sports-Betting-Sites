@@ -134,20 +134,6 @@ const COOKIES_CONFIG = {
             `
         },
         {
-            id: "contact-information",
-            title: "Contact Us About Cookies",
-            content: `
-                <p>If you have any questions about our use of cookies, please contact us:</p>
-                
-                <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; margin: 20px 0;">
-                    <p><strong>Email:</strong> privacy@{{DOMAIN}}</p>
-                    <p><strong>Contact Page:</strong> <a href="./contact.html" style="color: var(--primary-color);">Get in Touch</a></p>
-                </div>
-                
-                <p>We will respond to your inquiry within 48 hours.</p>
-            `
-        },
-        {
             id: "policy-updates",
             title: "Updates to This Policy",
             content: `
