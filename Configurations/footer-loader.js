@@ -101,7 +101,7 @@ Edit this file to change the footer across the entire website.
                 <h4>Connect</h4>
                 <p>Don't forget to sign up to our newsletter for the latest crypto sportsbook reviews and updates.</p>
                 <ul>
-                    <li><a href="./contact.html#faq">Contact Us</a></li>
+                    <li><a href="./newsletter.html#faq">Sign Up to Newsletter</a></li>
                 </ul>
             </div>
             
