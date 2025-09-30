@@ -90,6 +90,7 @@ const HOME_CONFIG = {
     },
 
     // Video sections
+    videoSectionsTitle: "Learn About Sports Betting",
     videoSections: [
         {
             enabled: true,
